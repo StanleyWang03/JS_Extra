@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2> JS_Extra</h2>
+
+	<p id="getFirstOne"></p>
+	<p id="getLastOne"></p>
+	<p id="getSpecialOne"></p>
+
+	<script>
+	let text = window.prompt("input data");
+	var query = window.prompt("input a char to search");
+	document.getElementById("getFirstOne").innerHTML = text.indexOf(query);
+	document.getElementById("getLastOne").innerHTML = text.lastIndexOf(query);
+	document.getElementById("getSpecialOne").innerHTML = text.indexOf(query,3);
+	</script>
+
+</body>
+</html>
